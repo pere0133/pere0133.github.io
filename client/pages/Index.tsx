@@ -361,7 +361,7 @@ export default function Index() {
       <section id="projects" className="py-16 px-6 relative" style={{background: 'linear-gradient(135deg, rgba(103, 119, 170, 0.12), rgba(255, 107, 53, 0.08))'}}>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl matrix-green mb-4 fade-in-up">Featured_Projects</h2>
+            <h2 className="text-3xl md:text-4xl matrix-purple mb-4 fade-in-up">Featured_Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto fade-in-up">
               Cutting-edge research and applications that push the boundaries of what's possible with data
             </p>
