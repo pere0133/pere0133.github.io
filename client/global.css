@@ -382,6 +382,17 @@
   }
 }
 
+@keyframes matrix-blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+@keyframes matrix-cursor {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 /* Scroll-triggered animations */
 .fade-in-up {
   opacity: 0;
