@@ -498,16 +498,14 @@
   animation: blink-caret 0.8s step-end infinite;
 }
 
-/* Matrix-style coding headers */
+/* Matrix-style coding headers - reduced blur */
 .matrix-header {
   font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
   color: #00ff41 !important;
   text-shadow:
-    0 0 5px #00ff41,
-    0 0 10px #00ff41,
-    0 0 15px #00ff41,
-    0 0 20px #00ff41,
-    0 0 25px #00ff41;
+    0 0 3px #00ff41,
+    0 0 6px #00ff41,
+    0 0 9px #00ff41;
   font-weight: 700;
   letter-spacing: 0.1em;
   position: relative;
@@ -525,14 +523,13 @@
   animation: matrix-cursor 1s ease-in-out infinite;
 }
 
-/* Alternative white coding style */
+/* Alternative white coding style - reduced blur */
 .code-header-white {
   font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
   color: #ffffff !important;
   text-shadow:
-    0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.3),
-    0 0 30px rgba(255, 255, 255, 0.1);
+    0 0 5px rgba(255, 255, 255, 0.4),
+    0 0 10px rgba(255, 255, 255, 0.2);
   font-weight: 700;
   letter-spacing: 0.05em;
 }
@@ -540,17 +537,17 @@
 .code-header-white::before {
   content: '$ ';
   color: hsl(var(--tech-orange));
-  text-shadow: 0 0 10px hsl(var(--tech-orange));
+  text-shadow: 0 0 5px hsl(var(--tech-orange));
 }
 
-/* Matrix green variation */
+/* Matrix green variation - reduced blur */
 .matrix-green {
   font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
   color: #39ff14 !important;
   text-shadow:
-    0 0 5px #39ff14,
-    0 0 10px #39ff14,
-    0 0 15px #39ff14;
+    0 0 3px #39ff14,
+    0 0 6px #39ff14,
+    0 0 9px #39ff14;
   font-weight: 600;
   letter-spacing: 0.08em;
 }
@@ -559,4 +556,26 @@
   content: '// ';
   color: #00ff88;
   opacity: 0.8;
+}
+
+/* Main title coding style */
+.main-title-code {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.main-title-code .code-part {
+  color: #ffffff !important;
+  text-shadow:
+    0 0 3px rgba(255, 255, 255, 0.3),
+    0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.main-title-code .gradient-part {
+  background: linear-gradient(45deg, hsl(var(--tech-steel)), hsl(var(--tech-orange)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
 }
