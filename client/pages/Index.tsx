@@ -416,7 +416,7 @@ export default function Index() {
                   <div className="text-sm text-muted-foreground">Citations</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-tech-gray">5</div>
+                  <div className="text-2xl font-bold text-tech-purple">5</div>
                   <div className="text-sm text-muted-foreground">Awards</div>
                 </div>
               </div>
