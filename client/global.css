@@ -39,12 +39,12 @@
 
     --radius: 0.75rem;
 
-    /* Data Science Theme Colors */
-    --tech-blue: 234 89% 74%;
-    --tech-purple: 261 83% 58%;
-    --tech-emerald: 152 76% 36%;
-    --neural-gradient-start: 234 100% 97%;
-    --neural-gradient-end: 261 100% 98%;
+    /* Masculine Tech Theme Colors */
+    --tech-blue: 213 27% 84%;
+    --tech-purple: 25 95% 53%;
+    --tech-emerald: 0 0% 45%;
+    --neural-gradient-start: 0 0% 98%;
+    --neural-gradient-end: 213 12% 95%;
 
     --sidebar-background: 0 0% 98%;
 
