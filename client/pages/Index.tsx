@@ -258,14 +258,14 @@ export default function Index() {
               <span className="text-sm font-medium text-tech-orange">PhD Candidate • Data Science</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight hero-enter">
-              <span className="typewriter inline-block">Transforming Data Into</span>
+            <h1 className="text-5xl md:text-7xl main-title-code mb-6 leading-tight hero-enter">
+              <span className="typewriter inline-block code-part">Transforming_Data_Into</span>
               <br />
               <span
                 ref={intelligenceRef}
-                className="bg-gradient-to-r from-tech-steel to-tech-orange bg-clip-text text-transparent parallax-text typewriter-2 inline-block"
+                className="gradient-part parallax-text typewriter-2 inline-block"
               >
-                Intelligence
+                Intelligence()
               </span>
             </h1>
 
