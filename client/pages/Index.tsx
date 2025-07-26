@@ -176,13 +176,13 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:border-tech-blue/30">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:border-tech-orange/30">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <Badge variant={project.type === "Research" ? "default" : "secondary"}>
                       {project.type}
                     </Badge>
-                    <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-tech-blue transition-colors cursor-pointer" />
+                    <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-tech-orange transition-colors cursor-pointer" />
                   </div>
                   
                   <h3 className="text-xl font-semibold text-foreground mb-3">{project.title}</h3>
