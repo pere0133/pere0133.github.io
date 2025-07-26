@@ -398,9 +398,9 @@ export default function Index() {
               </Button>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 fade-in-right">
               {publications.map((pub, index) => (
-                <Card key={index} className="hover:shadow-lg transition-all duration-300">
+                <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02]" style={{transitionDelay: `${index * 150}ms`}}>
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <Badge variant="secondary">{pub.venue}</Badge>
