@@ -258,12 +258,18 @@ export default function Index() {
               <span className="text-sm font-medium text-tech-orange">PhD Candidate • Data Science</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl main-title-elegant mb-6 leading-tight hero-enter">
-              <span className="typewriter inline-block regular-part">Transforming Data Into</span>
+            <h1 className="text-5xl md:text-7xl creative-title mb-6 leading-tight hero-enter relative">
+              <div className="title-particles"></div>
+              <div className="data-stream"></div>
+              <div className="scan-line"></div>
+
+              <span className="glitch-text inline-block" data-text="Transforming Data Into">
+                Transforming Data Into
+              </span>
               <br />
               <span
                 ref={intelligenceRef}
-                className="gradient-part parallax-text typewriter-2 inline-block"
+                className="morph-text parallax-text inline-block"
               >
                 Intelligence
               </span>
