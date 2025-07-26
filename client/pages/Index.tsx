@@ -72,7 +72,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-neutral-gradient-start to-neural-gradient-end">
+    <div className="min-h-screen bg-gradient-to-br from-background via-neutral-gradient-start to-neural-gradient-end neural-bg">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4">
