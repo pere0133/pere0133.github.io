@@ -121,10 +121,10 @@ export default function Index() {
             </div>
 
             <div className="flex justify-center gap-6 mt-8">
-              <a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-tech-orange transition-colors">
                 <Github className="h-6 w-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-tech-blue transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-tech-orange transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
             </div>
