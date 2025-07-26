@@ -120,15 +120,17 @@
 }
 
 @layer utilities {
-  /* Neural Network Background Pattern */
+  /* Colorful Neural Network Background Pattern */
   .neural-bg {
-    background-image:
-      radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(168, 178, 199, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, rgba(115, 115, 115, 0.05) 0%, transparent 50%);
-    background-size: 100% 100%, 100% 100%, 100% 100%;
-    background-position: 0% 0%, 0% 0%, 0% 0%;
-    animation: neural-pulse 20s ease-in-out infinite;
+    background:
+      linear-gradient(135deg, hsl(213 30% 96%), hsl(25 40% 94%)),
+      radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.15) 0%, transparent 60%),
+      radial-gradient(circle at 80% 20%, rgba(103, 119, 170, 0.12) 0%, transparent 60%),
+      radial-gradient(circle at 40% 80%, rgba(139, 93, 168, 0.08) 0%, transparent 60%),
+      radial-gradient(circle at 60% 30%, rgba(255, 107, 53, 0.06) 0%, transparent 70%);
+    background-size: 100% 100%, 120% 120%, 100% 100%, 150% 150%, 80% 80%;
+    background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    animation: neural-pulse 25s ease-in-out infinite;
   }
 
   .neural-grid {
