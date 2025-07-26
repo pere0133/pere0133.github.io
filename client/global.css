@@ -39,12 +39,12 @@
 
     --radius: 0.75rem;
 
-    /* Masculine Tech Theme Colors */
-    --tech-blue: 213 27% 84%;
-    --tech-purple: 25 95% 53%;
-    --tech-emerald: 0 0% 45%;
-    --neural-gradient-start: 0 0% 98%;
-    --neural-gradient-end: 213 12% 95%;
+    /* Colorful Tech Theme Colors */
+    --tech-blue: 213 50% 75%;
+    --tech-orange: 25 95% 53%;
+    --tech-purple: 261 70% 55%;
+    --neural-gradient-start: 213 30% 96%;
+    --neural-gradient-end: 25 40% 94%;
 
     --sidebar-background: 0 0% 98%;
 
