@@ -451,7 +451,7 @@ export default function Index() {
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6 data-particles relative" style={{background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(139, 93, 168, 0.12))'}}>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 fade-in-up">Let's Collaborate</h2>
+          <h2 className="text-3xl md:text-4xl matrix-header mb-6 fade-in-up">Lets_Collaborate</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto fade-in-up">
             Interested in discussing research opportunities, industry applications, or potential collaborations?
             I'd love to hear from you.
