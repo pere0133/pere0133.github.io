@@ -333,7 +333,7 @@ export default function Index() {
       <section id="about" className="py-16 px-6 matrix-bg relative">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 fade-in-up">Technical Expertise</h2>
+            <h2 className="text-3xl md:text-4xl matrix-header mb-4 fade-in-up">Technical_Expertise</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto fade-in-up">
               A comprehensive toolkit spanning machine learning, data engineering, and research methodologies
             </p>
