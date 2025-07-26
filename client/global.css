@@ -540,21 +540,21 @@
   text-shadow: 0 0 5px hsl(var(--tech-orange));
 }
 
-/* Matrix green variation - reduced blur */
-.matrix-green {
+/* Tech purple variation - theme matching */
+.matrix-purple {
   font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
-  color: #39ff14 !important;
+  color: hsl(var(--tech-purple)) !important;
   text-shadow:
-    0 0 3px #39ff14,
-    0 0 6px #39ff14,
-    0 0 9px #39ff14;
+    0 0 3px hsl(var(--tech-purple)),
+    0 0 6px hsl(var(--tech-purple)),
+    0 0 9px hsl(var(--tech-purple));
   font-weight: 600;
   letter-spacing: 0.08em;
 }
 
-.matrix-green::before {
+.matrix-purple::before {
   content: '// ';
-  color: #00ff88;
+  color: hsl(var(--tech-steel));
   opacity: 0.8;
 }
 
