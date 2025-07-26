@@ -243,7 +243,7 @@ export default function Index() {
                       <div className="text-sm text-muted-foreground">{pub.citations} citations</div>
                     </div>
                     <h3 className="font-semibold text-foreground mb-2">{pub.title}</h3>
-                    <Button variant="ghost" size="sm" className="text-tech-blue hover:text-tech-blue/80 p-0">
+                    <Button variant="ghost" size="sm" className="text-tech-orange hover:text-tech-orange/80 p-0">
                       <ExternalLink className="mr-1 h-3 w-3" />
                       Read Paper
                     </Button>
