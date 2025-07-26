@@ -148,7 +148,7 @@ export default function Index() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {skills.map((skill, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:border-tech-blue/30">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:border-tech-orange/30">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="font-semibold text-foreground">{skill.name}</span>
