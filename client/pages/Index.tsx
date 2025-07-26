@@ -203,8 +203,8 @@ export default function Index() {
       </section>
 
       {/* Research & Publications */}
-      <section id="research" className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
+      <section id="research" className="py-16 px-6 code-rain relative">
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Research Impact</h2>
