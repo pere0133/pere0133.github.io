@@ -257,11 +257,21 @@
   100% { transform: translateY(0) translateX(0); }
 }
 
-@keyframes rain-fall {
-  0% { transform: translateY(-100%); opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { transform: translateY(100vh); opacity: 0; }
+@keyframes rain-fall-smooth {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(200vh);
+    opacity: 0;
+  }
 }
 
 @keyframes float-1 {
