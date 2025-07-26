@@ -99,18 +99,18 @@ export default function Index() {
             
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
               Transforming Data Into
-              <span className="bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-tech-steel to-tech-orange bg-clip-text text-transparent">
                 {" "}Intelligence
               </span>
             </h1>
-            
+
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
-              PhD researcher specializing in machine learning optimization and neural architecture search. 
+              PhD researcher specializing in machine learning optimization and neural architecture search.
               Passionate about bridging the gap between cutting-edge research and real-world applications.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-tech-blue hover:bg-tech-blue/90 text-white">
+              <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-white">
                 <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
               </Button>
