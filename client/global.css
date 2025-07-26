@@ -328,3 +328,70 @@
 .parallax-text {
   transition: transform 0.1s ease-out;
 }
+
+/* Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid;
+  border-color: hsl(var(--tech-orange));
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.8s step-end infinite;
+}
+
+.typewriter-2 {
+  overflow: hidden;
+  border-right: 3px solid;
+  border-color: hsl(var(--tech-orange));
+  white-space: nowrap;
+  animation: typing-2 2.5s steps(30, end) 1s both, blink-caret 0.8s step-end infinite 1s;
+  opacity: 0;
+}
+
+.typewriter-subtitle {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-subtitle 4s steps(80, end) 3.5s both;
+  opacity: 0;
+}
+
+/* Dramatic entrance effects */
+.hero-enter {
+  opacity: 0;
+  transform: translateY(100px) scale(0.8);
+  animation: hero-entrance 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.badge-enter {
+  opacity: 0;
+  transform: translateY(-50px) rotate(-10deg);
+  animation: badge-entrance 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s forwards;
+}
+
+.buttons-enter {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: buttons-entrance 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s forwards;
+}
+
+.social-enter {
+  opacity: 0;
+  transform: scale(0);
+  animation: social-entrance 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.5s forwards;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(168, 178, 199, 0.1));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Writing cursor effect */
+.writing-cursor::after {
+  content: '|';
+  color: hsl(var(--tech-orange));
+  animation: blink-caret 0.8s step-end infinite;
+}
