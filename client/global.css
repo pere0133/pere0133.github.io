@@ -486,3 +486,66 @@
   color: hsl(var(--tech-orange));
   animation: blink-caret 0.8s step-end infinite;
 }
+
+/* Matrix-style coding headers */
+.matrix-header {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
+  color: #00ff41 !important;
+  text-shadow:
+    0 0 5px #00ff41,
+    0 0 10px #00ff41,
+    0 0 15px #00ff41,
+    0 0 20px #00ff41,
+    0 0 25px #00ff41;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.matrix-header::before {
+  content: '> ';
+  color: #00ff41;
+  animation: matrix-blink 1.5s ease-in-out infinite alternate;
+}
+
+.matrix-header::after {
+  content: ' _';
+  color: #00ff41;
+  animation: matrix-cursor 1s ease-in-out infinite;
+}
+
+/* Alternative white coding style */
+.code-header-white {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
+  color: #ffffff !important;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.code-header-white::before {
+  content: '$ ';
+  color: hsl(var(--tech-orange));
+  text-shadow: 0 0 10px hsl(var(--tech-orange));
+}
+
+/* Matrix green variation */
+.matrix-green {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
+  color: #39ff14 !important;
+  text-shadow:
+    0 0 5px #39ff14,
+    0 0 10px #39ff14,
+    0 0 15px #39ff14;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.matrix-green::before {
+  content: '// ';
+  color: #00ff88;
+  opacity: 0.8;
+}
