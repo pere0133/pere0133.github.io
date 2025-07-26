@@ -329,18 +329,18 @@ export default function Index() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-16 px-6 bg-muted/30 neural-grid relative">
+      <section id="projects" className="py-16 px-6 bg-muted/30 relative">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 fade-in-up">Featured Projects</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto fade-in-up">
               Cutting-edge research and applications that push the boundaries of what's possible with data
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:border-tech-orange/30">
+              <Card key={index} className={`project-card fade-in-up group hover:shadow-xl transition-all duration-300 hover:border-tech-orange/30 hover:scale-[1.02] ${index === 1 ? 'fade-in-up' : index === 0 ? 'fade-in-left' : 'fade-in-right'}`} style={{transitionDelay: `${index * 200}ms`}}>
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <Badge variant={project.type === "Research" ? "default" : "secondary"}>
