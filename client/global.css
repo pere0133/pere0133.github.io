@@ -39,12 +39,12 @@
 
     --radius: 0.75rem;
 
-    /* Colorful Tech Theme Colors */
+    /* Dark Tech Theme Colors */
     --tech-blue: 213 50% 75%;
     --tech-orange: 25 95% 53%;
     --tech-purple: 261 70% 55%;
-    --neural-gradient-start: 213 30% 96%;
-    --neural-gradient-end: 25 40% 94%;
+    --neural-gradient-start: 229 84% 4%;
+    --neural-gradient-end: 229 50% 6%;
 
     --sidebar-background: 0 0% 98%;
 
