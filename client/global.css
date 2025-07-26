@@ -171,15 +171,17 @@
   .code-rain::after {
     content: '';
     position: absolute;
-    top: -50%;
+    top: -100%;
     left: 0;
     right: 0;
     bottom: 0;
     background-image:
-      linear-gradient(transparent 0%, rgba(255, 107, 53, 0.1) 50%, transparent 100%);
-    background-size: 2px 100px;
-    animation: rain-fall 15s linear infinite;
-    opacity: 0.3;
+      linear-gradient(180deg, transparent 0%, rgba(255, 107, 53, 0.08) 20%, rgba(168, 178, 199, 0.06) 50%, rgba(255, 107, 53, 0.08) 80%, transparent 100%),
+      linear-gradient(180deg, transparent 10%, rgba(168, 178, 199, 0.04) 30%, rgba(255, 107, 53, 0.04) 70%, transparent 90%);
+    background-size: 3px 200px, 2px 150px;
+    background-position: 0 0, 50px 0;
+    animation: rain-fall-smooth 20s ease-in-out infinite;
+    opacity: 0.4;
   }
 
   /* Floating geometric shapes */
