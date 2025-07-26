@@ -58,8 +58,8 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         "tech-steel": "hsl(var(--tech-blue))",
-        "tech-orange": "hsl(var(--tech-purple))",
-        "tech-gray": "hsl(var(--tech-emerald))",
+        "tech-orange": "hsl(var(--tech-orange))",
+        "tech-purple": "hsl(var(--tech-purple))",
       },
       borderRadius: {
         lg: "var(--radius)",
