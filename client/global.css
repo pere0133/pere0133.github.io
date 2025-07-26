@@ -498,14 +498,14 @@
   animation: blink-caret 0.8s step-end infinite;
 }
 
-/* Matrix-style coding headers - reduced blur */
+/* Tech-style coding headers - theme colors */
 .matrix-header {
   font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
-  color: #00ff41 !important;
+  color: hsl(var(--tech-orange)) !important;
   text-shadow:
-    0 0 3px #00ff41,
-    0 0 6px #00ff41,
-    0 0 9px #00ff41;
+    0 0 3px hsl(var(--tech-orange)),
+    0 0 6px hsl(var(--tech-orange)),
+    0 0 9px hsl(var(--tech-orange));
   font-weight: 700;
   letter-spacing: 0.1em;
   position: relative;
@@ -513,13 +513,13 @@
 
 .matrix-header::before {
   content: '> ';
-  color: #00ff41;
+  color: hsl(var(--tech-orange));
   animation: matrix-blink 1.5s ease-in-out infinite alternate;
 }
 
 .matrix-header::after {
   content: ' _';
-  color: #00ff41;
+  color: hsl(var(--tech-orange));
   animation: matrix-cursor 1s ease-in-out infinite;
 }
 
