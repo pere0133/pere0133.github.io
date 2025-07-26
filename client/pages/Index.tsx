@@ -260,7 +260,10 @@ export default function Index() {
             
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
               Transforming Data Into
-              <span className="bg-gradient-to-r from-tech-steel to-tech-orange bg-clip-text text-transparent">
+              <span
+                ref={intelligenceRef}
+                className="bg-gradient-to-r from-tech-steel to-tech-orange bg-clip-text text-transparent parallax-text inline-block"
+              >
                 {" "}Intelligence
               </span>
             </h1>
