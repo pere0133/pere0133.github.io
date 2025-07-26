@@ -370,10 +370,10 @@ export default function Index() {
       <section id="research" className="py-16 px-6 code-rain relative">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="fade-in-left">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Research Impact</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                My research focuses on developing efficient machine learning algorithms and neural architectures 
+                My research focuses on developing efficient machine learning algorithms and neural architectures
                 that can scale to real-world applications while maintaining theoretical rigor.
               </p>
               
