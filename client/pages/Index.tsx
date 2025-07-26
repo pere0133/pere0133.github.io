@@ -253,27 +253,56 @@ export default function Index() {
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-tech-orange/10 border border-tech-orange/20 rounded-full px-4 py-2 mb-6">
+            <div className="inline-flex items-center gap-2 bg-tech-orange/10 border border-tech-orange/20 rounded-full px-4 py-2 mb-6 badge-enter">
               <Sparkles className="h-4 w-4 text-tech-orange" />
               <span className="text-sm font-medium text-tech-orange">PhD Candidate • Data Science</span>
             </div>
-            
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-              Transforming Data Into
+
+            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight hero-enter">
+              <span className="typewriter inline-block">Transforming Data Into</span>
+              <br />
               <span
                 ref={intelligenceRef}
-                className="bg-gradient-to-r from-tech-steel to-tech-orange bg-clip-text text-transparent parallax-text inline-block"
+                className="bg-gradient-to-r from-tech-steel to-tech-orange bg-clip-text text-transparent parallax-text typewriter-2 inline-block"
               >
-                {" "}Intelligence
+                Intelligence
               </span>
             </h1>
 
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed typewriter-subtitle">
               PhD researcher specializing in machine learning optimization and neural architecture search.
               Passionate about bridging the gap between cutting-edge research and real-world applications.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            {/* Welcome Video Section */}
+            <div className="mb-12 hero-enter" style={{animationDelay: '5s'}}>
+              <div className="max-w-2xl mx-auto video-container">
+                <div className="aspect-video bg-gradient-to-br from-tech-steel/20 to-tech-orange/20 rounded-lg flex items-center justify-center relative overflow-hidden">
+                  {/* Placeholder for video - replace with your actual video */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-tech-steel/10 to-tech-orange/10"></div>
+                  <div className="relative z-10 text-center p-8">
+                    <div className="w-20 h-20 mx-auto mb-4 bg-tech-orange/20 rounded-full flex items-center justify-center">
+                      <svg className="w-8 h-8 text-tech-orange" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">Welcome Video</h3>
+                    <p className="text-sm text-muted-foreground">Click to play introduction</p>
+                  </div>
+                  {/* Add your video element here:
+                  <video
+                    className="w-full h-full object-cover"
+                    controls
+                    poster="/path-to-your-poster.jpg"
+                  >
+                    <source src="/path-to-your-video.mp4" type="video/mp4" />
+                  </video>
+                  */}
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center buttons-enter">
               <Button size="lg" className="bg-tech-orange hover:bg-tech-orange/90 text-white">
                 <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
@@ -284,7 +313,7 @@ export default function Index() {
               </Button>
             </div>
 
-            <div className="flex justify-center gap-6 mt-8">
+            <div className="flex justify-center gap-6 mt-8 social-enter">
               <a href="#" className="text-muted-foreground hover:text-tech-orange transition-colors">
                 <Github className="h-6 w-6" />
               </a>
