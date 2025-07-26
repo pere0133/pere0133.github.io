@@ -215,20 +215,20 @@ export default function Index() {
               
               <div className="grid grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-tech-blue">15+</div>
+                  <div className="text-2xl font-bold text-tech-steel">15+</div>
                   <div className="text-sm text-muted-foreground">Publications</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-tech-purple">300+</div>
+                  <div className="text-2xl font-bold text-tech-orange">300+</div>
                   <div className="text-sm text-muted-foreground">Citations</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-tech-emerald">5</div>
+                  <div className="text-2xl font-bold text-tech-gray">5</div>
                   <div className="text-sm text-muted-foreground">Awards</div>
                 </div>
               </div>
 
-              <Button variant="outline" className="border-tech-blue text-tech-blue hover:bg-tech-blue hover:text-white">
+              <Button variant="outline" className="border-tech-orange text-tech-orange hover:bg-tech-orange hover:text-white">
                 <BookOpen className="mr-2 h-4 w-4" />
                 View Full Publications
               </Button>
