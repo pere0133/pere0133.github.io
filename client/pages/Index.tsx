@@ -90,6 +90,125 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-6 floating-shapes data-particles relative">
+        {/* Data Visualization Background */}
+        <div className="absolute inset-0 opacity-10 overflow-hidden">
+          <svg className="absolute top-10 right-10 w-96 h-96 animate-pulse" viewBox="0 0 400 400">
+            <defs>
+              <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#FF6B35" stopOpacity="0.8"/>
+                <stop offset="100%" stopColor="#A8B2C7" stopOpacity="0.4"/>
+              </linearGradient>
+            </defs>
+            {/* Neural Network Nodes */}
+            <circle cx="50" cy="100" r="8" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="50" cy="150" r="8" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="50" cy="200" r="8" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="150" cy="75" r="10" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="1;0.4;1" dur="3.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="150" cy="125" r="10" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="150" cy="175" r="10" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="1;0.4;1" dur="4.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="150" cy="225" r="10" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="250" cy="100" r="8" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="1;0.4;1" dur="2.8s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="250" cy="150" r="8" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="3.8s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="250" cy="200" r="8" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="350" cy="150" r="12" fill="url(#nodeGrad)">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="4.2s" repeatCount="indefinite"/>
+            </circle>
+
+            {/* Connections */}
+            <line x1="58" y1="100" x2="142" y2="75" stroke="#FF6B35" strokeWidth="2" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3s" repeatCount="indefinite"/>
+            </line>
+            <line x1="58" y1="150" x2="142" y2="125" stroke="#A8B2C7" strokeWidth="2" opacity="0.3">
+              <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.5s" repeatCount="indefinite"/>
+            </line>
+            <line x1="58" y1="200" x2="142" y2="225" stroke="#737373" strokeWidth="2" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4s" repeatCount="indefinite"/>
+            </line>
+
+            <line x1="160" y1="75" x2="242" y2="100" stroke="#FF6B35" strokeWidth="2" opacity="0.3">
+              <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.5s" repeatCount="indefinite"/>
+            </line>
+            <line x1="160" y1="125" x2="242" y2="150" stroke="#A8B2C7" strokeWidth="2" opacity="0.3">
+              <animate attributeName="opacity" values="0.1;0.6;0.1" dur="2s" repeatCount="indefinite"/>
+            </line>
+            <line x1="160" y1="175" x2="242" y2="200" stroke="#FF6B35" strokeWidth="2" opacity="0.3">
+              <animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.5s" repeatCount="indefinite"/>
+            </line>
+
+            <line x1="258" y1="100" x2="338" y2="150" stroke="#A8B2C7" strokeWidth="3" opacity="0.4">
+              <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.8s" repeatCount="indefinite"/>
+            </line>
+            <line x1="258" y1="150" x2="338" y2="150" stroke="#FF6B35" strokeWidth="3" opacity="0.4">
+              <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.8s" repeatCount="indefinite"/>
+            </line>
+            <line x1="258" y1="200" x2="338" y2="150" stroke="#737373" strokeWidth="3" opacity="0.4">
+              <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.2s" repeatCount="indefinite"/>
+            </line>
+          </svg>
+
+          {/* Data Chart Background */}
+          <svg className="absolute bottom-10 left-10 w-80 h-64 opacity-20" viewBox="0 0 320 200">
+            <defs>
+              <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#FF6B35" stopOpacity="0.8"/>
+                <stop offset="100%" stopColor="#FF6B35" stopOpacity="0.1"/>
+              </linearGradient>
+            </defs>
+            {/* Chart bars */}
+            <rect x="20" y="120" width="30" height="80" fill="url(#chartGrad)">
+              <animate attributeName="height" values="80;120;80" dur="4s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="120;80;120" dur="4s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="60" y="90" width="30" height="110" fill="url(#chartGrad)">
+              <animate attributeName="height" values="110;60;110" dur="3s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="90;140;90" dur="3s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="100" y="60" width="30" height="140" fill="url(#chartGrad)">
+              <animate attributeName="height" values="140;90;140" dur="5s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="60;110;60" dur="5s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="140" y="100" width="30" height="100" fill="url(#chartGrad)">
+              <animate attributeName="height" values="100;150;100" dur="3.5s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="100;50;100" dur="3.5s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="180" y="70" width="30" height="130" fill="url(#chartGrad)">
+              <animate attributeName="height" values="130;80;130" dur="4.5s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="70;120;70" dur="4.5s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="220" y="40" width="30" height="160" fill="url(#chartGrad)">
+              <animate attributeName="height" values="160;110;160" dur="2.5s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="40;90;40" dur="2.5s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="260" y="80" width="30" height="120" fill="url(#chartGrad)">
+              <animate attributeName="height" values="120;170;120" dur="6s" repeatCount="indefinite"/>
+              <animate attributeName="y" values="80;30;80" dur="6s" repeatCount="indefinite"/>
+            </rect>
+          </svg>
+        </div>
+
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-tech-orange/10 border border-tech-orange/20 rounded-full px-4 py-2 mb-6">
