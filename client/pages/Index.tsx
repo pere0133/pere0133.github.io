@@ -92,9 +92,9 @@ export default function Index() {
       <section className="pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-tech-blue/10 border border-tech-blue/20 rounded-full px-4 py-2 mb-6">
-              <Sparkles className="h-4 w-4 text-tech-blue" />
-              <span className="text-sm font-medium text-tech-blue">PhD Candidate • Data Science</span>
+            <div className="inline-flex items-center gap-2 bg-tech-orange/10 border border-tech-orange/20 rounded-full px-4 py-2 mb-6">
+              <Sparkles className="h-4 w-4 text-tech-orange" />
+              <span className="text-sm font-medium text-tech-orange">PhD Candidate • Data Science</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
