@@ -1,22 +1,64 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  ExternalLink, 
-  Brain, 
-  Database, 
-  TrendingUp, 
-  Code, 
-  BookOpen, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ExternalLink,
+  Brain,
+  Database,
+  TrendingUp,
+  Code,
+  BookOpen,
   Award,
   ChevronDown,
   Sparkles
 } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function Index() {
+  const intelligenceRef = useRef<HTMLSpanElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.3;
+
+      if (intelligenceRef.current) {
+        intelligenceRef.current.style.transform = `translateX(${rate}px)`;
+      }
+    };
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, observerOptions);
+
+    // Observe project cards
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card) => observer.observe(card));
+
+    // Observe other animated elements
+    const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
+    animatedElements.forEach((el) => observer.observe(el));
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      observer.disconnect();
+    };
+  }, []);
   const skills = [
     { name: "Python", category: "Programming", level: "Expert" },
     { name: "R", category: "Programming", level: "Advanced" },
