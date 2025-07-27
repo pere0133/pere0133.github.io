@@ -1086,6 +1086,21 @@
 }
 
 .gradient-intelligence {
+  color: hsl(var(--tech-orange)) !important;
+  font-weight: 700;
+  opacity: 1 !important;
+  position: relative;
+  display: inline-block;
+  animation: intelligence-entrance 2s ease-out 0.8s both;
+}
+
+.gradient-intelligence::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     135deg,
     hsl(var(--tech-steel)) 0%,
@@ -1097,14 +1112,18 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: hsl(var(--tech-orange));
-  font-weight: 700;
-  opacity: 1 !important;
-  position: relative;
-  display: inline-block;
-  animation:
-    intelligence-entrance 2s ease-out 0.8s both,
-    gradient-entrance-flow 3s ease-out 1.5s both;
+  animation: gradient-entrance-flow 3s ease-out 1.5s both;
+  pointer-events: none;
+}
+
+/* Fallback approach when gradient mask doesn't work */
+@supports not (background-clip: text) {
+  .gradient-intelligence::before {
+    display: none;
+  }
+  .gradient-intelligence {
+    color: hsl(var(--tech-orange)) !important;
+  }
 }
 
 /* Fallback for unsupported browsers */
