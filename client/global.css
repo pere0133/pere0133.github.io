@@ -996,6 +996,7 @@
 
 .epic-gradient-text {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  color: hsl(var(--foreground));
   background: linear-gradient(
     90deg,
     #ffffff 0%,
@@ -1013,10 +1014,25 @@
   animation:
     spectacular-entrance 2.5s ease-out forwards,
     rainbow-flow 4s linear infinite;
-  text-shadow: none;
+}
+
+/* Fallback for browsers that don't support background-clip: text */
+@supports not (background-clip: text) or not (-webkit-background-clip: text) {
+  .epic-gradient-text {
+    color: hsl(var(--foreground)) !important;
+    background: none !important;
+    -webkit-text-fill-color: inherit !important;
+  }
+  .intelligence-spectacular {
+    color: hsl(var(--tech-orange)) !important;
+    background: none !important;
+    -webkit-text-fill-color: inherit !important;
+  }
 }
 
 .intelligence-spectacular {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  color: hsl(var(--tech-orange));
   background: linear-gradient(
     45deg,
     hsl(var(--tech-steel)) 0%,
@@ -1036,7 +1052,7 @@
     mega-gradient-dance 6s ease-in-out 2s infinite,
     floating-glow 4s ease-in-out 3s infinite;
   transform-style: preserve-3d;
-  filter: drop-shadow(0 0 15px rgba(255, 107, 53, 0.4)) drop-shadow(0 0 30px rgba(103, 119, 170, 0.3));
+  text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
 }
 
 .intelligence-spectacular::before {
