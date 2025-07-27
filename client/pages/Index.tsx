@@ -547,7 +547,9 @@ export default function Index() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="clean-title-text">Decoding the World Through</span>
+              <span className="clean-title-text">
+                Decoding the World Through
+              </span>
               <br />
               <span
                 ref={intelligenceRef}
