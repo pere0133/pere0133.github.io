@@ -15,11 +15,12 @@ import {
   ChevronDown,
   Sparkles,
 } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Index() {
   const intelligenceRef = useRef<HTMLSpanElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
+  const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
