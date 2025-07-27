@@ -547,13 +547,13 @@ export default function Index() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="clean-title-text">Transforming Data Into</span>
+              <span className="clean-title-text">Decoding the World Through</span>
               <br />
               <span
                 ref={intelligenceRef}
                 className="gradient-intelligence parallax-text"
               >
-                Intelligence
+                Data, Code &amp; Curiosity...
               </span>
             </h1>
 
