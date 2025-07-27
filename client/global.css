@@ -849,6 +849,36 @@
   }
 }
 
+@keyframes intelligence-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8) rotateX(20deg);
+    background-position: -100% 0;
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateY(-5px) scale(1.05) rotateX(-5deg);
+    background-position: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0deg);
+    background-position: 0% 0;
+  }
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+
 @keyframes subtle-glow {
   0%, 100% {
     filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.2));
