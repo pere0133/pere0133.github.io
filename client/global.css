@@ -852,17 +852,17 @@
 @keyframes intelligence-entrance {
   0% {
     opacity: 0;
-    transform: translateY(50px) scale(0.8) rotateX(20deg);
+    transform: translateY(30px);
     background-position: -100% 0;
   }
   60% {
     opacity: 0.8;
-    transform: translateY(-5px) scale(1.05) rotateX(-5deg);
+    transform: translateY(-2px);
     background-position: 50% 0;
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1) rotateX(0deg);
+    transform: translateY(0);
     background-position: 0% 0;
   }
 }
