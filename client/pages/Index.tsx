@@ -560,7 +560,8 @@ export default function Index() {
             </h1>
 
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed typewriter-subtitle">
-              Ph.D. student in Data Science at OU specializing in computer vision, SLAM, and robotics perception using Python, C++, and ROS.
+              Ph.D. student in Data Science at OU specializing in computer
+              vision, SLAM, and robotics perception using Python, C++, and ROS.
             </p>
 
             {/* Welcome Video Section */}
