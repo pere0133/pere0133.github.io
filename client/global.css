@@ -1085,9 +1085,8 @@
     "Courier New", monospace;
   color: hsl(var(--tech-purple)) !important;
   text-shadow:
-    0 0 3px hsl(var(--tech-purple)),
-    0 0 6px hsl(var(--tech-purple)),
-    0 0 9px hsl(var(--tech-purple));
+    0 0 2px hsl(var(--tech-purple)),
+    0 0 4px hsl(var(--tech-purple));
   font-weight: 600;
   letter-spacing: 0.08em;
 }
