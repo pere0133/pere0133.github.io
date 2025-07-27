@@ -826,12 +826,35 @@
   }
 }
 
-@keyframes simple-gradient-shift {
+/* Clean, modern animations */
+@keyframes clean-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes subtle-glow {
   0%, 100% {
-    background: linear-gradient(135deg, hsl(var(--tech-steel)), hsl(var(--tech-orange)));
+    filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.2));
   }
   50% {
-    background: linear-gradient(135deg, hsl(var(--tech-orange)), hsl(var(--tech-purple)));
+    filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.4));
   }
 }
 
