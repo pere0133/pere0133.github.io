@@ -1024,26 +1024,16 @@
 
 .intelligence-spectacular {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  color: hsl(var(--tech-orange));
-  background: linear-gradient(
-    45deg,
-    hsl(var(--tech-steel)) 0%,
-    hsl(var(--tech-orange)) 25%,
-    hsl(var(--tech-purple)) 50%,
-    hsl(var(--tech-orange)) 75%,
-    hsl(var(--tech-steel)) 100%
-  );
-  background-size: 400% 400%;
+  background: linear-gradient(135deg, hsl(var(--tech-steel)), hsl(var(--tech-orange)));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: hsl(var(--tech-orange)) !important;
   position: relative;
   opacity: 1 !important;
   animation:
     intelligence-rise 3s ease-out 1s forwards,
-    mega-gradient-dance 6s ease-in-out 2s infinite,
-    floating-glow 4s ease-in-out 3s infinite;
-  transform-style: preserve-3d;
+    simple-gradient-shift 4s ease-in-out 2s infinite;
   text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
 }
 
