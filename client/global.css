@@ -867,36 +867,15 @@
   }
 }
 
-@keyframes gradient-flow {
+@keyframes gradient-entrance-flow {
   0% {
-    background-position: 0% 0;
+    background-position: 0% 0%;
   }
   50% {
-    background-position: 100% 0;
+    background-position: 70% 70%;
   }
   100% {
-    background-position: 0% 0;
-  }
-}
-
-@keyframes color-shift-glow {
-  0%, 100% {
-    color: hsl(var(--tech-orange));
-    text-shadow:
-      0 0 10px hsl(var(--tech-orange)),
-      0 0 20px hsl(var(--tech-steel));
-  }
-  33% {
-    color: hsl(var(--tech-steel));
-    text-shadow:
-      0 0 15px hsl(var(--tech-steel)),
-      0 0 25px hsl(var(--tech-purple));
-  }
-  66% {
-    color: hsl(var(--tech-purple));
-    text-shadow:
-      0 0 12px hsl(var(--tech-purple)),
-      0 0 22px hsl(var(--tech-orange));
+    background-position: 50% 50%;
   }
 }
 
