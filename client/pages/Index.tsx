@@ -24,10 +24,10 @@ export default function Index() {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.pageYOffset;
-      const rate = scrolled * -0.3;
+      const gradientPosition = 50 + (scrolled * 0.1);
 
       if (intelligenceRef.current) {
-        intelligenceRef.current.style.transform = `translateX(${rate}px)`;
+        intelligenceRef.current.style.backgroundPosition = `${gradientPosition}% ${gradientPosition}%`;
       }
     };
 
