@@ -23,6 +23,11 @@ export default function Index() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
+    // Welcome screen timeout
+    const welcomeTimer = setTimeout(() => {
+      setShowWelcome(false);
+    }, 4500); // 4.5 seconds
+
     const handleScroll = () => {
       const scrolled = window.pageYOffset;
       const gradientPosition = 50 + (scrolled * 0.1);
