@@ -1024,47 +1024,34 @@
   position: relative;
 }
 
-.epic-gradient-text {
-  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  color: #ffffff !important;
-  text-shadow:
-    0 0 10px hsl(var(--tech-orange)),
-    0 0 20px hsl(var(--tech-steel)),
-    0 0 30px hsl(var(--tech-orange));
-  position: relative;
-  opacity: 1 !important;
-  animation:
-    spectacular-entrance 2.5s ease-out forwards,
-    text-color-shift 4s ease-in-out infinite;
+/* Clean, modern title styles */
+.clean-title-text {
+  color: hsl(var(--foreground));
+  font-weight: 600;
+  opacity: 0;
+  animation: clean-fade-in 1.5s ease-out 0.3s forwards;
 }
 
-/* Fallback for browsers that don't support background-clip: text */
-@supports not (background-clip: text) or not (-webkit-background-clip: text) {
-  .epic-gradient-text {
-    color: hsl(var(--foreground)) !important;
-    background: none !important;
-    -webkit-text-fill-color: inherit !important;
-  }
-  .intelligence-spectacular {
-    color: hsl(var(--tech-orange)) !important;
-    background: none !important;
-    -webkit-text-fill-color: inherit !important;
-  }
-}
-
-.intelligence-spectacular {
-  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+.gradient-intelligence {
   background: linear-gradient(135deg, hsl(var(--tech-steel)), hsl(var(--tech-orange)));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: hsl(var(--tech-orange)) !important;
-  position: relative;
-  opacity: 1 !important;
+  color: hsl(var(--tech-orange));
+  font-weight: 700;
+  opacity: 0;
   animation:
-    intelligence-rise 3s ease-out 1s forwards,
-    simple-gradient-shift 4s ease-in-out 2s infinite;
-  text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+    gradient-fade-in 2s ease-out 1s forwards,
+    subtle-glow 4s ease-in-out 2s infinite;
+  position: relative;
+}
+
+/* Fallback for unsupported browsers */
+@supports not (background-clip: text) {
+  .gradient-intelligence {
+    color: hsl(var(--tech-orange)) !important;
+    background: none !important;
+  }
 }
 
 .intelligence-spectacular::before {
