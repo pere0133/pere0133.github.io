@@ -996,24 +996,16 @@
 
 .epic-gradient-text {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  color: hsl(var(--foreground));
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    hsl(var(--tech-steel)) 25%,
-    hsl(var(--tech-orange)) 50%,
-    hsl(var(--tech-steel)) 75%,
-    #ffffff 100%
-  );
-  background-size: 300% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff !important;
+  text-shadow:
+    0 0 10px hsl(var(--tech-orange)),
+    0 0 20px hsl(var(--tech-steel)),
+    0 0 30px hsl(var(--tech-orange));
   position: relative;
   opacity: 1 !important;
   animation:
     spectacular-entrance 2.5s ease-out forwards,
-    rainbow-flow 4s linear infinite;
+    text-color-shift 4s ease-in-out infinite;
 }
 
 /* Fallback for browsers that don't support background-clip: text */
