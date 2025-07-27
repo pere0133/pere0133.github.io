@@ -1040,9 +1040,8 @@
     "Courier New", monospace;
   color: hsl(var(--tech-orange)) !important;
   text-shadow:
-    0 0 3px hsl(var(--tech-orange)),
-    0 0 6px hsl(var(--tech-orange)),
-    0 0 9px hsl(var(--tech-orange));
+    0 0 2px hsl(var(--tech-orange)),
+    0 0 4px hsl(var(--tech-orange));
   font-weight: 700;
   letter-spacing: 0.1em;
   position: relative;
