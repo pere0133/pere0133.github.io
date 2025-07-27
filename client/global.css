@@ -1086,26 +1086,17 @@
 }
 
 .gradient-intelligence {
-  background: linear-gradient(
-    90deg,
-    hsl(var(--tech-steel)) 0%,
-    hsl(var(--tech-orange)) 25%,
-    hsl(var(--tech-purple)) 50%,
-    hsl(var(--tech-orange)) 75%,
-    hsl(var(--tech-steel)) 100%
-  );
-  background-size: 200% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: hsl(var(--tech-orange)) !important;
   font-weight: 700;
   opacity: 1 !important;
-  animation:
-    intelligence-entrance 2s ease-out 0.8s both,
-    gradient-flow 3s linear 2s infinite;
   position: relative;
   display: inline-block;
+  animation:
+    intelligence-entrance 2s ease-out 0.8s both,
+    color-shift-glow 3s ease-in-out 2s infinite;
+  text-shadow:
+    0 0 10px hsl(var(--tech-orange)),
+    0 0 20px hsl(var(--tech-steel));
 }
 
 /* Fallback for unsupported browsers */
