@@ -1096,6 +1096,8 @@
   opacity: 1 !important;
   position: relative;
   display: inline-block;
+  line-height: 1.2;
+  padding-bottom: 0.1em;
   animation:
     intelligence-entrance 2s ease-out 0.8s both,
     gradient-entrance-flow 3s ease-out 1.5s both;
