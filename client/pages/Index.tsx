@@ -30,7 +30,7 @@ export default function Index() {
 
     const handleScroll = () => {
       const scrolled = window.pageYOffset;
-      const gradientPosition = 50 + (scrolled * 0.1);
+      const gradientPosition = 50 + scrolled * 0.1;
 
       if (intelligenceRef.current) {
         intelligenceRef.current.style.backgroundPosition = `${gradientPosition}% ${gradientPosition}%`;
@@ -547,9 +547,7 @@ export default function Index() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="clean-title-text">
-                Transforming Data Into
-              </span>
+              <span className="clean-title-text">Transforming Data Into</span>
               <br />
               <span
                 ref={intelligenceRef}

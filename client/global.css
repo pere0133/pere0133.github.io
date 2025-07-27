@@ -738,9 +738,15 @@
 }
 
 @keyframes rainbow-flow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes intelligence-rise {
@@ -767,7 +773,8 @@
 }
 
 @keyframes mega-gradient-dance {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 0%;
     transform: scale(1);
   }
@@ -786,27 +793,42 @@
 }
 
 @keyframes floating-glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 15px rgba(255, 107, 53, 0.4)) drop-shadow(0 0 30px rgba(103, 119, 170, 0.3));
+  0%,
+  100% {
+    filter: drop-shadow(0 0 15px rgba(255, 107, 53, 0.4))
+      drop-shadow(0 0 30px rgba(103, 119, 170, 0.3));
   }
   50% {
-    filter: drop-shadow(0 0 25px rgba(255, 107, 53, 0.6)) drop-shadow(0 0 40px rgba(139, 93, 168, 0.4));
+    filter: drop-shadow(0 0 25px rgba(255, 107, 53, 0.6))
+      drop-shadow(0 0 40px rgba(139, 93, 168, 0.4));
   }
 }
 
 @keyframes shine-sweep {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 @keyframes pulse-overlay {
-  0%, 90% { opacity: 0; }
-  95% { opacity: 0.3; }
-  100% { opacity: 0; }
+  0%,
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes text-color-shift {
-  0%, 100% {
+  0%,
+  100% {
     text-shadow:
       0 0 10px hsl(var(--tech-orange)),
       0 0 20px hsl(var(--tech-steel)),
@@ -886,7 +908,8 @@
 }
 
 @keyframes subtle-glow {
-  0%, 100% {
+  0%,
+  100% {
     filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.2));
   }
   50% {
@@ -1126,7 +1149,7 @@
 }
 
 .intelligence-spectacular::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -1143,7 +1166,7 @@
 }
 
 .intelligence-spectacular::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: inherit;
