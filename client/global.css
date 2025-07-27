@@ -1086,8 +1086,16 @@
 }
 
 .gradient-intelligence {
-  background: linear-gradient(135deg, #6777aa, #ff6b35, #8b5da8, #6777aa);
-  background-size: 300% 300%;
+  background: linear-gradient(
+    135deg,
+    #6777aa 0%,
+    #ff6b35 20%,
+    #8b5da8 40%,
+    #ff6b35 60%,
+    #6777aa 80%,
+    #8b5da8 100%
+  );
+  background-size: 400% 400%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1100,7 +1108,7 @@
   padding-bottom: 0.1em;
   animation:
     intelligence-entrance 2s ease-out 0.8s both,
-    gradient-entrance-flow 3s ease-out 1.5s both;
+    continuous-gradient-flow 8s ease-in-out 2s infinite;
 }
 
 /* Fallback for unsupported browsers */
