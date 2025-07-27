@@ -540,21 +540,14 @@ export default function Index() {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl creative-title mb-6 leading-tight hero-enter relative">
-              <div className="title-particles"></div>
-              <div className="data-stream"></div>
-              <div className="scan-line"></div>
-
-              <span
-                className="epic-gradient-text inline-block"
-                data-text="Transforming Data Into"
-              >
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              <span className="clean-title-text">
                 Transforming Data Into
               </span>
               <br />
               <span
                 ref={intelligenceRef}
-                className="intelligence-spectacular parallax-text inline-block"
+                className="gradient-intelligence parallax-text"
               >
                 Intelligence
               </span>
