@@ -546,7 +546,7 @@ export default function Index() {
               <div className="scan-line"></div>
 
               <span
-                className="glitch-text inline-block"
+                className="epic-gradient-text inline-block"
                 data-text="Transforming Data Into"
               >
                 Transforming Data Into
@@ -554,7 +554,7 @@ export default function Index() {
               <br />
               <span
                 ref={intelligenceRef}
-                className="morph-text parallax-text inline-block"
+                className="intelligence-spectacular parallax-text inline-block"
               >
                 Intelligence
               </span>
