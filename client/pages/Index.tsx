@@ -68,43 +68,43 @@ export default function Index() {
     };
   }, []);
   const skills = [
-    { name: "Python", category: "Programming", level: "Expert" },
-    { name: "C++", category: "Programming", level: "Advanced" },
-    { name: "ROS / ROS2", category: "Robotics", level: "Advanced" },
-    { name: "OpenCV", category: "Computer Vision", level: "Advanced" },
-    { name: "PyTorch", category: "ML/AI", level: "Advanced" },
-    { name: "TensorFlow", category: "ML/AI", level: "Intermediate" },
-    { name: "SLAM", category: "Robotics Perception", level: "Advanced" },
-    { name: "NumPy", category: "Data Analysis", level: "Expert" },
-    { name: "Docker", category: "DevOps", level: "Intermediate" },
-    { name: "Linux / Ubuntu", category: "Systems", level: "Advanced" },
-    { name: "Point Cloud (PCL)", category: "3D Sensing", level: "Intermediate" },
-    { name: "SQL", category: "Database", level: "Intermediate" },
+    { name: "Python", category: "Programming", level: "Advanced" },
+    { name: "C++", category: "Programming", level: "Intermediate" },
+    { name: "ROS2 / ROS", category: "Robotics", level: "Advanced" },
+    { name: "SLAM (Kimera)", category: "Robotics", level: "Advanced" },
+    { name: "OpenCV", category: "Perception", level: "Advanced" },
+    { name: "YOLOv8", category: "Perception", level: "Advanced" },
+    { name: "PyTorch", category: "ML/AI", level: "Intermediate" },
+    { name: "Sensor Fusion", category: "Robotics", level: "Advanced" },
+    { name: "CUDA", category: "Systems", level: "Intermediate" },
+    { name: "Docker", category: "Systems", level: "Intermediate" },
+    { name: "Linux/UNIX", category: "Systems", level: "Advanced" },
+    { name: "Git", category: "Tools", level: "Advanced" },
   ];
 
   const projects = [
     {
-      title: "Visual-Inertial SLAM System",
+      title: "Overnight Pediatric Monitoring System (OPMS)",
       description:
-        "Designed and implemented a tightly-coupled visual-inertial odometry pipeline achieving centimeter-level localization accuracy for autonomous mobile robots.",
-      tech: ["C++", "ROS2", "OpenCV", "Eigen"],
-      link: "https://github.com/pere0133",
+        "ROS2 multi-camera pipeline for real-time 6DoF head pose estimation and physiological signal tracking in pediatric clinical settings. Part of NSF SBIR Phase I project invited for $300k full submission.",
+      tech: ["ROS2", "Python", "YOLOv8", "ByteTrack", "RepNet6D", "Sensor Fusion", "OpenCV"],
+      link: "#",
       type: "Research",
     },
     {
-      title: "3D Object Detection for Robotics Perception",
+      title: "Multi-Robot SLAM Deployment",
       description:
-        "Built a real-time LiDAR-camera fusion pipeline for 3D object detection and semantic segmentation in unstructured outdoor environments.",
-      tech: ["Python", "PyTorch", "ROS", "PCL"],
-      link: "https://github.com/pere0133",
+        "Deployed Kimera SLAM across a fleet of 10 robots, fusing LiDAR, stereo camera, and IMU data for visual-inertial odometry, real-time localization, and 3D mapping in ROS.",
+      tech: ["ROS", "C++", "Kimera SLAM", "LiDAR", "IMU", "VIO"],
+      link: "#",
       type: "Research",
     },
     {
-      title: "Autonomous Navigation with Semantic Mapping",
+      title: "Active Collaborative SLAM (Active-CLSAM)",
       description:
-        "Developed a semantic SLAM framework that integrates deep learning-based scene understanding with metric-topological map representations.",
-      tech: ["Python", "C++", "ROS", "TensorFlow"],
-      link: "https://github.com/pere0133",
+        "Awarded $2,500 DISC SEED Fund grant to research deep reinforcement learning strategies for optimizing active collaborative SLAM in multi-robot systems.",
+      tech: ["Python", "ROS2", "Deep RL", "SLAM", "Multi-Robot"],
+      link: "#",
       type: "Research",
     },
   ];
@@ -112,16 +112,16 @@ export default function Index() {
   const publications = [
     {
       title:
-        "Tightly-Coupled Visual-Inertial Odometry with Robust Initialization for UAV Navigation",
-      venue: "ICRA 2024",
-      citations: 12,
-      link: "#",
+        "Smart Infrastructures and Connected Vehicles in A Mini-City Platform",
+      venue: "IEEE ITSC 2024",
+      citations: 0,
+      link: "https://doi.org/10.48550/arXiv.2408.04195",
     },
     {
       title:
-        "Semantic 3D Mapping via LiDAR-Camera Fusion for Outdoor Robot Perception",
-      venue: "IROS 2023",
-      citations: 28,
+        "Hands-On Robotic Course on Computer Vision for Autonomous Vehicles",
+      venue: "IEEE ISEC 2025",
+      citations: 0,
       link: "#",
     },
   ];
@@ -132,7 +132,7 @@ export default function Index() {
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-bold text-foreground">DataSci.PhD</div>
+            <div className="text-xl font-bold text-foreground">Daniel Perez</div>
             <div className="hidden md:flex space-x-8">
               <a
                 href="#about"
@@ -543,7 +543,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-2 bg-tech-orange/10 border border-tech-orange/20 rounded-full px-4 py-2 mb-6 badge-enter">
               <Sparkles className="h-4 w-4 text-tech-orange" />
               <span className="text-sm font-medium text-tech-orange">
-                PhD Candidate • Data Science
+                PhD Candidate • Computer Vision &amp; Robotics
               </span>
             </div>
 
@@ -625,7 +625,7 @@ export default function Index() {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://linkedin.com/in/pere0133"
+                href="https://linkedin.com/in/danielperezou"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-tech-orange transition-colors"
@@ -760,20 +760,20 @@ export default function Index() {
 
               <div className="grid grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-tech-steel">15+</div>
+                  <div className="text-2xl font-bold text-tech-steel">2</div>
                   <div className="text-sm text-muted-foreground">
                     Publications
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-tech-orange">
-                    300+
+                    $2.5k
                   </div>
-                  <div className="text-sm text-muted-foreground">Citations</div>
+                  <div className="text-sm text-muted-foreground">Grant</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-tech-purple">5</div>
-                  <div className="text-sm text-muted-foreground">Awards</div>
+                  <div className="text-2xl font-bold text-tech-purple">1</div>
+                  <div className="text-sm text-muted-foreground">Award</div>
                 </div>
               </div>
 
@@ -803,14 +803,32 @@ export default function Index() {
                     <h3 className="font-semibold text-foreground mb-2">
                       {pub.title}
                     </h3>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="text-tech-orange hover:text-tech-orange/80 p-0"
-                    >
-                      <ExternalLink className="mr-1 h-3 w-3" />
-                      Read Paper
-                    </Button>
+                    {pub.link !== "#" ? (
+                      <a
+                        href={pub.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="text-tech-orange hover:text-tech-orange/80 p-0"
+                        >
+                          <ExternalLink className="mr-1 h-3 w-3" />
+                          Read Paper
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="text-tech-orange hover:text-tech-orange/80 p-0"
+                        disabled
+                      >
+                        <ExternalLink className="mr-1 h-3 w-3" />
+                        Read Paper
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
@@ -839,13 +857,15 @@ export default function Index() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in-up">
-            <Button
-              size="lg"
-              className="bg-tech-orange hover:bg-tech-orange/90 text-white"
-            >
-              <Mail className="mr-2 h-4 w-4" />
-              pere0133@ou.edu
-            </Button>
+            <a href="mailto:danielperez@ou.edu">
+              <Button
+                size="lg"
+                className="bg-tech-orange hover:bg-tech-orange/90 text-white"
+              >
+                <Mail className="mr-2 h-4 w-4" />
+                danielperez@ou.edu
+              </Button>
+            </a>
             <Button variant="outline" size="lg">
               <Award className="mr-2 h-4 w-4" />
               Download CV
@@ -858,7 +878,7 @@ export default function Index() {
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2025 Pere — Ph.D. Candidate in Data Science at OU. Built with curiosity.
+            © 2025 Daniel Perez — University of Oklahoma
           </p>
         </div>
       </footer>
