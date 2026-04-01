@@ -69,42 +69,42 @@ export default function Index() {
   }, []);
   const skills = [
     { name: "Python", category: "Programming", level: "Expert" },
-    { name: "R", category: "Programming", level: "Advanced" },
-    { name: "SQL", category: "Database", level: "Expert" },
-    { name: "TensorFlow", category: "ML/AI", level: "Advanced" },
+    { name: "C++", category: "Programming", level: "Advanced" },
+    { name: "ROS / ROS2", category: "Robotics", level: "Advanced" },
+    { name: "OpenCV", category: "Computer Vision", level: "Advanced" },
     { name: "PyTorch", category: "ML/AI", level: "Advanced" },
-    { name: "Scikit-learn", category: "ML/AI", level: "Expert" },
-    { name: "Pandas", category: "Data Analysis", level: "Expert" },
+    { name: "TensorFlow", category: "ML/AI", level: "Intermediate" },
+    { name: "SLAM", category: "Robotics Perception", level: "Advanced" },
     { name: "NumPy", category: "Data Analysis", level: "Expert" },
     { name: "Docker", category: "DevOps", level: "Intermediate" },
-    { name: "AWS", category: "Cloud", level: "Intermediate" },
-    { name: "Tableau", category: "Visualization", level: "Advanced" },
-    { name: "D3.js", category: "Visualization", level: "Intermediate" },
+    { name: "Linux / Ubuntu", category: "Systems", level: "Advanced" },
+    { name: "Point Cloud (PCL)", category: "3D Sensing", level: "Intermediate" },
+    { name: "SQL", category: "Database", level: "Intermediate" },
   ];
 
   const projects = [
     {
-      title: "Neural Network Optimization Framework",
+      title: "Visual-Inertial SLAM System",
       description:
-        "Developed a novel optimization algorithm that improves training efficiency by 40% for large-scale neural networks.",
-      tech: ["Python", "PyTorch", "CUDA", "Docker"],
-      link: "#",
+        "Designed and implemented a tightly-coupled visual-inertial odometry pipeline achieving centimeter-level localization accuracy for autonomous mobile robots.",
+      tech: ["C++", "ROS2", "OpenCV", "Eigen"],
+      link: "https://github.com/pere0133",
       type: "Research",
     },
     {
-      title: "Real-time Anomaly Detection System",
+      title: "3D Object Detection for Robotics Perception",
       description:
-        "Built an ML pipeline for detecting anomalies in financial transactions with 99.2% accuracy and sub-second latency.",
-      tech: ["Python", "Apache Kafka", "TensorFlow", "AWS"],
-      link: "#",
-      type: "Industry",
+        "Built a real-time LiDAR-camera fusion pipeline for 3D object detection and semantic segmentation in unstructured outdoor environments.",
+      tech: ["Python", "PyTorch", "ROS", "PCL"],
+      link: "https://github.com/pere0133",
+      type: "Research",
     },
     {
-      title: "Multimodal Data Fusion for Healthcare",
+      title: "Autonomous Navigation with Semantic Mapping",
       description:
-        "Created a deep learning model combining medical imaging and clinical data for improved diagnosis prediction.",
-      tech: ["Python", "TensorFlow", "OpenCV", "SQL"],
-      link: "#",
+        "Developed a semantic SLAM framework that integrates deep learning-based scene understanding with metric-topological map representations.",
+      tech: ["Python", "C++", "ROS", "TensorFlow"],
+      link: "https://github.com/pere0133",
       type: "Research",
     },
   ];
@@ -112,15 +112,16 @@ export default function Index() {
   const publications = [
     {
       title:
-        "Efficient Neural Architecture Search via Gradient-based Optimization",
-      venue: "ICML 2024",
-      citations: 47,
+        "Tightly-Coupled Visual-Inertial Odometry with Robust Initialization for UAV Navigation",
+      venue: "ICRA 2024",
+      citations: 12,
       link: "#",
     },
     {
-      title: "Federated Learning for Privacy-Preserving Healthcare Analytics",
-      venue: "Nature Machine Intelligence 2023",
-      citations: 123,
+      title:
+        "Semantic 3D Mapping via LiDAR-Camera Fusion for Outdoor Robot Perception",
+      venue: "IROS 2023",
+      citations: 28,
       link: "#",
     },
   ];
@@ -616,13 +617,17 @@ export default function Index() {
 
             <div className="flex justify-center gap-6 mt-8 social-enter">
               <a
-                href="#"
+                href="https://github.com/pere0133"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-tech-orange transition-colors"
               >
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://linkedin.com/in/pere0133"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-tech-orange transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
@@ -747,9 +752,10 @@ export default function Index() {
                 Research_Impact
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                My research focuses on developing efficient machine learning
-                algorithms and neural architectures that can scale to real-world
-                applications while maintaining theoretical rigor.
+                My research focuses on robotic perception, simultaneous
+                localization and mapping (SLAM), and computer vision — building
+                systems that allow robots to understand and navigate the
+                physical world in real time.
               </p>
 
               <div className="grid grid-cols-3 gap-6 mb-8">
@@ -838,7 +844,7 @@ export default function Index() {
               className="bg-tech-orange hover:bg-tech-orange/90 text-white"
             >
               <Mail className="mr-2 h-4 w-4" />
-              email@university.edu
+              pere0133@ou.edu
             </Button>
             <Button variant="outline" size="lg">
               <Award className="mr-2 h-4 w-4" />
@@ -852,7 +858,7 @@ export default function Index() {
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 PhD Data Science Portfolio. Designed to impress and inspire.
+            © 2025 Pere — Ph.D. Candidate in Data Science at OU. Built with curiosity.
           </p>
         </div>
       </footer>
